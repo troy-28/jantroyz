@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    
+</head>
+
+
+<body>
+    <canvas id="space-bg"></canvas>
+    <div class="header-hover-zone"></div>
+
+    <header>
+        <div class="left">
+            <h1><span style="color: #72a1de;">troyarnz</span></h1>
+        </div>
+
+       <nav class="nav-links">
+     <a href="#top">Home</a>
+     <a href="#about-me">About Me</a>
+     <a href="#about">Certificates</a>
+     <a href="#educational-tour">Educational Tour</a>
+       </nav>
+
+    </header>
+
+<section class="hero">
+
+    <div class="hero-info">
+        <h1><span class="gradient">Troyzzz</span></h1>
+        <p>I’m a Front-end Developer with experience in website creation.</p>
+
+        <div class="social-icons hero-socials">
+    <a href="https://www.facebook.com/troyahhhh" target="_blank">
+        <i class='bx bxl-facebook-circle'></i>
+    </a>
+    <a href="https://www.instagram.com/jantroyzz/" target="_blank">
+        <i class='bx bxl-instagram'></i>    
+    </a>
+    <a href="https://x.com/Jantroy_" target="_blank">
+        <i class='bx bxl-twitter'></i>
+    </a>
+    <a href="https://github.com/troy-28" target="_blank">
+        <i class='bx bxl-github'></i>
+    </a>
+</div>
+
+    </div>
+
+    <div class="hero-right">
+        <div class="image-ring">
+            <img src="IMAGES/images/mepic2.jpg" alt="Profile Image">
+        </div>
+    </div>
+
+</section>
+
+
+<section class="about-me-section" id="about-me">
+    <div class="about-me-container">
+
+        <div class="about-me-image">
+            <img src="IMAGES/images/piccircle.jpg" alt="About Me Image">
+        </div>
+
+ 
+        <div class="about-me-text">
+            <h1>About Me</h1>
+            <p>
+                I am a third-year Bachelor of Science in Information Technology student at Holy Cross of Davao College, 
+                driven by a strong interest in technology and continuous self-improvement. I actively explore various areas of IT to broaden my technical knowledge and practical skills. 
+                Rather than limiting myself to a single specialization, I value adaptability and lifelong learning, 
+                aspiring to become a competent and innovative IT professional capable of contributing meaningful solutions in a dynamic digital landscape..
+            </p>
+        </div>
+
+    </div>
+</section>
+
+    <section class="about-section" id="about">
+
+        <h1 class="about-title">CERTIFICATES</h1>
+
+        <div class="about-grid">
+
+            <div class="info-cards certificate">
+                <div class="cert-label">BIT DEGREE</div>
+                <img src="IMAGES/images/bitdegree-certificate-1589247.jpeg" class="certificate-img">
+            </div>
+
+            <div class="info-cards certificate">
+                <div class="cert-label">CODECHUM</div>
+                <img src="IMAGES/images/codechumcert.png" class="certificate-img">
+            </div>
+
+            <div class="info-cards certificate">
+                <div class="cert-label">DEAN'S LISTER</div>
+                <img src="IMAGES/images/dlcert.jpg" class="certificate-img">
+            </div>
+
+            <div class="info-cards certificate full">
+                <div class="cert-label">EDUCATIONAL TOUR</div>
+                <img src="IMAGES/images/wattcert.jpg" class="certificate-img">
+            </div>
+
+            <div class="info-cards certificate full">
+                <div class="cert-label">NSTP</div>
+                <img src="IMAGES/images/nstpcert.jpg" class="certificate-img">
+            </div>
+
+            <div class="info-cards certificate full">
+                <div class="cert-label">CETSO ORGANIZATION</div>
+                <img src="IMAGES/images/cetsocert.jpg" class="certificate-img">
+            </div>
+
+        </div>
+    </section>
+
+ 
+    <section class="tech-stack" id="tech">
+    <div class="tech-marquee">
+        <div class="tech-container">
+            <img src="IMAGES/images/5.png" class="tech-icon" />
+            <img src="IMAGES/images/6.png" class="tech-icon" />
+            <img src="IMAGES/images/7.png" class="tech-icon" />
+            <img src="IMAGES/images/10.png" class="tech-icon" />
+            <img src="IMAGES/images/12.png" class="tech-icon" />
+            <img src="IMAGES/images/13.png" class="tech-icon" />
+
+            <!-- DUPLICATE (for seamless loop) -->
+            <img src="IMAGES/images/5.png" class="tech-icon" />
+            <img src="IMAGES/images/6.png" class="tech-icon" />
+            <img src="IMAGES/images/7.png" class="tech-icon" />
+            <img src="IMAGES/images/10.png" class="tech-icon" />
+            <img src="IMAGES/images/12.png" class="tech-icon" />
+            <img src="IMAGES/images/13.png" class="tech-icon" />
+        </div>
+    </div>
+</section>
+
+
+<section class="about-section" id="educational-tour">
+    <h1 class="about-title">EDUCATIONAL TOUR</h1>
+    <h2 class="sub-title">Cebu - Bohol</h2>
+
+    <div class="tour-grid">
+        <a href="educational-tour.html" class="tour-card">
+            <div class="tour-label">OPEN TOUR PAGE</div>
+        </a>
+    </div>
+</section>
+
+
+
+    <div id="img-popup" class="popup">  
+        <img id="popup-img" class="popup-content">
+    </div>
+
+<script src="app.js"></script>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <p class="footer-text">© 2025 Troy M. — All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
