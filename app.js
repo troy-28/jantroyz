@@ -1,13 +1,7 @@
-/* ===============================
-   PAGE ENTER ANIMATION
-================================ */
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("page-enter");
 });
 
-/* ===============================
-   IMAGE POPUP
-================================ */
 const popup = document.getElementById("img-popup");
 const popupImg = document.getElementById("popup-img");
 const closePopup = document.getElementById("popup-close");
@@ -35,9 +29,6 @@ if (popup) {
     });
 }
 
-/* ===============================
-   HEADER AUTO HIDE
-================================ */
 let lastScrollY = window.scrollY;
 const header = document.querySelector("header");
 const hoverZone = document.querySelector(".header-hover-zone");
@@ -60,9 +51,6 @@ if (hoverZone && header) {
     });
 }
 
-/* ===============================
-   SCROLL REVEAL ANIMATION
-================================ */
 const revealElements = document.querySelectorAll(
     ".hero-info, .about-me-container, .info-cards, .album-card, .tour-card, .album-big-card"
 );
@@ -82,9 +70,6 @@ const observer = new IntersectionObserver(entries => {
 
 revealElements.forEach(el => observer.observe(el));
 
-/* ===============================
-   ABOUT IMAGE MOUSE PARALLAX
-================================ */
 const aboutImg = document.querySelector(".about-me-image img");
 
 if (aboutImg) {
@@ -95,9 +80,6 @@ if (aboutImg) {
     });
 }
 
-/* ===============================
-   CANVAS SETUP
-================================ */
 const canvas = document.getElementById("space-bg");
 const ctx = canvas.getContext("2d");
 
@@ -108,9 +90,6 @@ function resize() {
 resize();
 window.addEventListener("resize", resize);
 
-/* ===============================
-   🧲 MOUSE-REACTIVE GRID WARP
-================================ */
 let mouseX = -9999;
 let mouseY = -9999;
 let time = 0;
@@ -132,7 +111,6 @@ window.addEventListener("mouseleave", () => {
 function drawWarpGrid() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    /* ===== BLUE THEME BACKGROUND ===== */
     const gradient = ctx.createRadialGradient(
         canvas.width / 2,
         canvas.height / 2,
@@ -149,13 +127,11 @@ function drawWarpGrid() {
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    /* ===== GRID STYLE ===== */
     ctx.strokeStyle = "rgba(124, 138, 255, 0.28)";
     ctx.lineWidth = 1;
 
     time += 0.01;
 
-    /* ===== VERTICAL LINES ===== */
     for (let x = 0; x <= canvas.width; x += gridSize) {
         ctx.beginPath();
         for (let y = 0; y <= canvas.height; y += 8) {
@@ -176,7 +152,6 @@ function drawWarpGrid() {
         ctx.stroke();
     }
 
-    /* ===== HORIZONTAL LINES ===== */
     for (let y = 0; y <= canvas.height; y += gridSize) {
         ctx.beginPath();
         for (let x = 0; x <= canvas.width; x += 8) {
@@ -202,9 +177,6 @@ function drawWarpGrid() {
 
 drawWarpGrid();
 
-/* ===============================
-   PAGE EXIT TRANSITION
-================================ */
 document.querySelectorAll("a").forEach(link => {
     const href = link.getAttribute("href");
 
@@ -231,10 +203,10 @@ window.addEventListener('scroll', () => {
     if (!backBtn) return;
 
     if (window.scrollY > lastScrollY) {
-        // scrolling DOWN → hide
+       
         backBtn.classList.add('hide');
     } else {
-        // scrolling UP → show
+        
         backBtn.classList.remove('hide');
     }
 
